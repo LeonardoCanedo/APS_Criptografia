@@ -6,8 +6,6 @@ letters = list(phrase)
 numbers = []
 
 # definindo função para transformar letras em números, não podemos deixar que isso rode automaticamente pq na hora de decodificar ele faria isso e daria errado.
-
-
 def lettersToNumbers():
     # essa função passa por todos os itens do array letters e transforma eles em números, se o número for negativo, ele arredonda, por exemplo espaço retorna -64, então transformamos ele em 64. O comando ord ja abrange também as letras maiusculas
     for element in letters:
@@ -17,11 +15,8 @@ def lettersToNumbers():
 
         numbers.append(convertedNumber)
 
-
 # executando a função lettersToNumbers
 lettersToNumbers()
-# print(letters)
-# print(numbers)
 
 # definindo função que pega os numeros convertidos e adiciona +3 a cada um
 def addToNumbers():
@@ -31,7 +26,6 @@ def addToNumbers():
         addedNumbers.append(newNumber)
     # print(addedNumbers)
     return addedNumbers
-
 
 def addedNumbersToBinary(array):
     binaryArray = []
@@ -48,21 +42,17 @@ def reverseBinaryNumbers(binaryArrayCreated):
         stringList = list(i)
         stringList.reverse()
         reversedBinaryArray.append(stringList)
-    print(reversedBinaryArray)
+    return reversedBinaryArray
+
+def arrayToString(array):
+  encripted = []
+  for i in array:
+    string = "".join(str(x) for x in i)
+    encripted.append(string)
+
+  encripted = "".join(str(x) for x in encripted)
+  print(encripted)
+  return encripted
 
 
-
-reverseBinaryNumbers(addedNumbersToBinary(addToNumbers()))
-
-
-# def binaryInversion(listToArrays):
-
-
-# Exemplo de execução do progama
-
-
-# Insira o texto que deseja encriptar/decriptar:
-# leo
-#['l', 'e', 'o']
-#[12, 5, 15]
-#[15, 8, 18]
+arrayToString(reverseBinaryNumbers(addedNumbersToBinary(addToNumbers())))
