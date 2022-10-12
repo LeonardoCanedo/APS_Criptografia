@@ -17,6 +17,7 @@ Codificar
  
 Decodificar
   (old)Reversão => Binário => Número - 3 => Número => Letra => Remontar frase
+  
   (new) input codificado => split "1100001" (espaço) => lista criada pelo split => numero => número -3 => letra/palavra
 
 
