@@ -1,5 +1,6 @@
 # caixa de texto que recebera o texto
 Options1 = input("Digite 1 para Encriptar ou 2 para Descriptar: ")
+#enquanto a pessoa nao inserir 1 ou 2 mostra mensagem de erro e volta para o inicio do código
 while (Options1 != "1" or Options1 != "2"):    
     if Options1 == "1":
         phrase = input("Insira o texto que deseja encriptar:\n")
@@ -61,9 +62,10 @@ while (Options1 != "1" or Options1 != "2"):
 
 
         arrayToString(reverseBinaryNumbers(addedNumbersToBinary(addToNumbers())))
-    
+
     elif Options1 == "2":
         phrase2 = input("Insira o texto que deseja Descriptar:\n")
+        #essa funçao faz com que toda a frase encripitada seja separada no número "1100001" e cria uma lista separada com os resultados restantes.
         def binarytowords():
             listapalavras = phrase2.split("1100001")            
             print(listapalavras)
