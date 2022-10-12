@@ -9,12 +9,18 @@ Quando vocês fizerem alguma modificação no código e forem atualizar, vocês 
 Nosso algoritimo de criptografia trabalha com conversão de tipos (String, Int) e conversão de bases (Decimal, binária)
 
 A principio o algoritimo tem que funcionar assim:
+
+while com 3 opcoes - 1 => codificar, 2 => decodificar, 3 => mensagem de erro volta pro while.
+
 Codificar
-  Letra => Número => Número + 3 => Binário => Inversão
+  Letra => Número => Número + 3 => Binário => Inversão => print
  
 Decodificar
-  Reversão => Binário => Número - 3 => Número => Letra => Remontar frase
-  
+  (old)Reversão => Binário => Número - 3 => Número => Letra => Remontar frase
+  (new) input codificado => split "1100001" (espaço) => lista criada pelo split => numero => número -3 => letra/palavra
+
+
 Da para fazer mais melhorias como converter para mais bases tipo a Octal e Hexadecimal mas vamos primeiramente ter um produto entregável e ai pensamos em melhorias.
 Conto com vocês <3
+
 
