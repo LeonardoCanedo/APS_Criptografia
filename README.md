@@ -14,14 +14,10 @@ while com 3 opcoes - 1 => codificar, 2 => decodificar, 3 => mensagem de erro vol
 
 Codificar
   Letra => Número => Número + 3 => Binário => Inversão => print
+  Na codificação colocamos um certo separador para identificarmos o final de cada frase.
  
 Decodificar
-  (old)Reversão => Binário => Número - 3 => Número => Letra => Remontar frase
-  
-  (new) input codificado => split "1100001" (espaço) => lista criada pelo split => numero => número -3 => letra/palavra
+  Input codificado => split "1100001" (espaço) => Separar com split o separador => lista criada pelos splits => numero => número -3 => letra/palavra
 
-
-Da para fazer mais melhorias como converter para mais bases tipo a Octal e Hexadecimal mas vamos primeiramente ter um produto entregável e ai pensamos em melhorias.
-Conto com vocês <3
 
 
